@@ -3,9 +3,7 @@
 module.exports = {
 
     // All options are taken from https://github.com/kangax/html-minifier with default values
-    minifyOpts: {
-
-    },
+    minifyOpts: {},
 
     /* eslint-disable camelcase */
 
@@ -32,7 +30,7 @@ module.exports = {
     //                                          Default: unlimited
     // @param {Boolean} indent_handlebars       format and indent {{#foo}} and {{/foo}}. Default: false
     prettifyOpts: {
-
+        indent_size: 2
     }
 
     /* eslint-enable camelcase */

@@ -1,32 +1,26 @@
 <!doctype html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+  {{> head/head head.defaults}}
+</head>
 
-    <body class="page">
-        %=symbols=%
+<body>
+%=symbols=%
+<header class="header">
+  {{> header/header header.defaults}}
+</header>
+<main class="main">
 
-        <section class="page__wrapper">
+</main>
 
-            <!-- Include your modules here -->
+<footer class="footer">
+  {{> footer/footer}}
+</footer>
 
-            {{> example/example}}
+<script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+<script>svg4everybody();</script>
 
-            <div class="page__buffer"></div>
-
-        </section>
-
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
-
-        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
-        <script>svg4everybody();</script>
-
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
-    </body>
-
+<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
 </html>

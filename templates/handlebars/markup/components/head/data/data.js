@@ -1,6 +1,8 @@
-head: {
+data = {
+  head: {
     defaults: {
-        title: 'default title',
-        useSocialMetaTags: true
-    }
-}
+      title: 'default title',
+      useSocialMetaTags: false
+    },
+  }
+};

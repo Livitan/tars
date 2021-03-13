@@ -1,6 +1,7 @@
 'use strict';
 
 const Handlebars = tars.packages.handlebars;
+const HHhelpers = require('handlebars-helpers')();
 
 /**
  * You can add your own helpers to handlebarsHelpers Object
@@ -21,3 +22,4 @@ const handlebarsHelpers = {
 };
 
 module.exports = handlebarsHelpers;
+module.exports = HHhelpers;
