@@ -8,6 +8,10 @@ $breakpoints: (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
 
 }
 
+.some-class-for-heading {
+  @include spread(font-size, 1rem, 3rem);
+}
+
 :root {
   --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -20,7 +24,7 @@ html, body {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans-serif);
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   display: flex;

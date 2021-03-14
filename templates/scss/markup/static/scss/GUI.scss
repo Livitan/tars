@@ -1,2 +1,22 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+.btn {
+  display: inline-block;
+  font-weight: $btn-font-weight-base;
+  line-height: $btn-line-height;
+  color: $btn-color-base;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: $btn-bg;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: $btn-font-size;
+  border-radius: $btn-border-radius;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
